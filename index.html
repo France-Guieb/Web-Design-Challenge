@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Latitude Analysis</title>
+        
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+        <!-- css stylesheet-->
+        <link rel="stylesheet" href="assets/css/style.css" media="screen">
+
+    </head>
+
+    <body>
+        <!--navbar-->
+        <div class="container">
+            <nav class="navbar">
+                <div class="top-navbar">
+                    <div class="row">
+                        <div class="navbar-header">
+                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                Latitude
+                            </button>
+                        </div>
+            
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="dd"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="visualizations/maxtemp.html">Max Temperature</a></li>
+                                <li><a href="visualizations/humidity.html">Humidity</a></li>
+                                <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                                <li><a href="visualizations/windspeed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+        
+                        <li>
+                            <a href="comparison.html">Comparison</a>
+                        </li>
+
+                        <li>
+                            <a href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--contents-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <article class="about-project">
+                        <h1 class="header">Summary: Latitude vs. X</h1>
+                        <img src="assets/images/Fig1.png" alt="" id="description-image"/>
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row2">
+                    <h2 class="imageNav-header">Visualizations</h2>
+                <div id="images">
+                    <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                    <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                    <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                    <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--footer-->
+        <footer class="footer navbar2">
+            <p>&copy; Copyright Coding Bootcamp 2017</p>
+        </footer>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js">
+        </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+        </script>
+
+    </body>
+
+</html>
